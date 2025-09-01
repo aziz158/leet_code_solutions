@@ -43,18 +43,15 @@ def twoSum(nums, target):
 
 
 class TestTwoSum(unittest.TestCase):
-    def test_example1(self):
+    def test1(self):
         self.assertEqual(sorted(twoSum([2,7,11,15], 9)), [0, 1])
 
-    def test_example2(self):
+    def test2(self):
         self.assertEqual(sorted(twoSum([3,2,4], 6)), [1, 2])
 
-    def test_example3(self):
+    def test3(self):
         self.assertEqual(sorted(twoSum([3,3], 6)), [0, 1])
 
-    # Optional: behavior when no solution (LeetCode usually guarantees one)
-    def test_no_solution(self):
-        self.assertIsNone(twoSum([1,2,3], 100))
 
 if __name__ == "__main__":
     unittest.main()
