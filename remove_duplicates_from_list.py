@@ -58,7 +58,7 @@ def removeDuplicates(nums):
 
 
 
-class TestTwoSum(unittest.TestCase):
+class TestRemoveDup(unittest.TestCase):
     def test1(self):
         self.assertEqual(removeDuplicates([1,1,2]), 2)
 

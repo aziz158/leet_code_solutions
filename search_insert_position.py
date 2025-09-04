@@ -45,7 +45,7 @@ def searchInsert(nums, target):
 
         
 
-class TestTwoSum(unittest.TestCase):
+class TestSearchInsertPos(unittest.TestCase):
     def test1(self):
         self.assertEqual(searchInsert([1,3,5,6], 5), 2)
 

@@ -68,7 +68,7 @@ def isValid(s):
 
         return len(stack) == 0
 
-class TestTwoSum(unittest.TestCase):
+class TestValidParenthesis(unittest.TestCase):
     def test1(self):
         self.assertEqual(isValid("()"), True)
 

@@ -63,7 +63,7 @@ def merge(nums1, m, nums2, n):
     
 print(merge([-1,0,0,3,3,3,0,0,0], 6, [1,2,2], 3))
 
-class TestTwoSum(unittest.TestCase):
+class TestMergeSortArray(unittest.TestCase):
     def test1(self):
         self.assertEqual(merge([-1,0,0,3,3,3,0,0,0], 6, [1,2,2], 3), [-1, 0, 0, 1, 2, 2, 3, 3, 3])
 
