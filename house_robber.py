@@ -51,12 +51,7 @@ def rob(nums):
         return max(dp)
 
 
-        
-            
-            
-    
 
-print(rob([2, 1, 1, 2]))
 
 class TestRobber(unittest.TestCase):
     def test1(self):
