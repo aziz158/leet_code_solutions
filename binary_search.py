@@ -56,7 +56,7 @@ def search(nums, target):
         return -1
 
 
-class TestFindDuplicate(unittest.TestCase):
+class TestBinarySearch(unittest.TestCase):
     def test1(self):
         self.assertEqual(search([-1,0,3,5,9,12], 9), 4)
 

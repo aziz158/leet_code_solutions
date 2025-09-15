@@ -39,7 +39,7 @@ def isHappy(n):
         n = sum(int(digits)**2 for digits in str(n))
     return n == 1
 
-class TestRomanToInt(unittest.TestCase):
+class TestHappyNumber(unittest.TestCase):
     def test1(self):
         self.assertEqual(isHappy(19), True)
 

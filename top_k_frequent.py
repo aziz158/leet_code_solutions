@@ -52,7 +52,7 @@ def topKFrequent(nums: List[int], k: int) -> List[int]:
 
         return res
 
-class TestGroupAnagrams(unittest.TestCase):
+class TestTopK(unittest.TestCase):
     def test1(self):
         self.assertEqual(topKFrequent([1,1,1,2,2,3], 2), [1,2])
 
