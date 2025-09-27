@@ -74,3 +74,20 @@ def isIsomorphic(s: str, t: str) -> bool:
 
 print(isIsomorphic('paper', 'title'))
 
+class TestIsomorphicString(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(isIsomorphic('paper', 'title'), True)
+
+    def test2(self):
+        self.assertEqual(isIsomorphic('foo', 'bar'), False)
+
+    def test3(self):
+        self.assertEqual(isIsomorphic('egg', 'add'), True)
+
+    def test4(self):
+        self.assertEqual(isIsomorphic('baba', 'badc'), False)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
