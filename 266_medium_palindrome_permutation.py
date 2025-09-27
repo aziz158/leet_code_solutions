@@ -50,7 +50,7 @@ def canPermutePalindrome(s: str) -> bool:
 
 
 
-class TestStr(unittest.TestCase):
+class TestPalindromePermutation(unittest.TestCase):
     def test1(self):
         self.assertEqual(canPermutePalindrome("carerac"), True)
 
