@@ -50,6 +50,19 @@ def canPermutePalindrome(s: str) -> bool:
 
 
 
+class TestStr(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(canPermutePalindrome("carerac"), True)
+
+    def test2(self):
+        self.assertEqual(canPermutePalindrome("code"), False)
+
+    def test3(self):
+        self.assertEqual(canPermutePalindrome("aab"), True)
+
+    def test4(self):
+        self.assertEqual(canPermutePalindrome("slime"), False)
 
 
-print(canPermutePalindrome("carerac"))
+if __name__ == "__main__":
+    unittest.main()
