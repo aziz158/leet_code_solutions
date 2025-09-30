@@ -71,6 +71,9 @@ class TestStr(unittest.TestCase):
 
     def test4(self):
         self.assertEqual(strStr("sadbutsad", "but"), 3)
+    
+    def test5(self):
+        self.assertEqual(strStr("lilostitch", "leroy"), -1)
 
 
 if __name__ == "__main__":
