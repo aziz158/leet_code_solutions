@@ -44,6 +44,9 @@ class TestMajorityElement(unittest.TestCase):
     def test2(self):
         self.assertEqual(majorityElement([2,2,1,1,1,2,2]), 2)
 
+    def test3(self):
+        self.assertEqual(majorityElement([5,5,5]), 5)
+
 
 
 if __name__ == "__main__":
