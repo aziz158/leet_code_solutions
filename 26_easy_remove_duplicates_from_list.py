@@ -65,5 +65,8 @@ class TestRemoveDup(unittest.TestCase):
     def test2(self):
         self.assertEqual(removeDuplicates([0,0,1,1,1,2,2,3,3,4]), 5)
 
+    def test3(self):
+        self.assertEqual(removeDuplicates([1,2,3,4]), 4)
+
 if __name__ == "__main__":
     unittest.main()
