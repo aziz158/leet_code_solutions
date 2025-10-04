@@ -65,6 +65,10 @@ class TestBinarySearch(unittest.TestCase):
 
     def test3(self):
         self.assertEqual(search([-1,0,3,5,9,12], 3), 2)
+    
+    def test4(self):
+        self.assertEqual(search([9,12], 24), -1)
+
 
 
 if __name__ == "__main__":
