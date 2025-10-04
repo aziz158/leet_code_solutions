@@ -51,6 +51,10 @@ class TestTwoSum(unittest.TestCase):
 
     def test3(self):
         self.assertEqual(sorted(twoSum([3,3], 6)), [0, 1])
+    
+    def test4(self):
+        self.assertEqual(sorted(twoSum([1,3,5,12], 15)), [1, 3])
+
 
 
 if __name__ == "__main__":
