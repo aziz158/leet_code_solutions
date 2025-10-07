@@ -89,6 +89,13 @@ class TestNumIslands(unittest.TestCase):
    ["0","0","1","0","1"]
  ]), 4)
 
+    def test4(self):
+        self.assertEqual(numIslands([
+    ["1","0","1","0","1"],
+    ["0","1","0","1","0"],
+    ["1","0","1","0","1"],
+    ["0","1","0","1","0"]
+ ]), 10)
 
 if __name__ == "__main__":
     unittest.main()
