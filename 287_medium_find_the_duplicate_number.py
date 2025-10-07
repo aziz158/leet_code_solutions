@@ -53,6 +53,9 @@ class TestFindDuplicate(unittest.TestCase):
 
     def test3(self):
         self.assertEqual(findDuplicate([3,3,3,3,3]), 3)
+    
+    def test4(self):
+        self.assertEqual(findDuplicate([7,7]), 7)
 
 
 if __name__ == "__main__":
