@@ -49,5 +49,21 @@ def longestMountain(arr: List[int]) -> int:
 
 print(longestMountain([2,3,1,2,3,4,5,6]))
 
+class TestFindDuplicate(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(longestMountain([2,1,4,7,3,2,5]), 5)
+
+    def test2(self):
+        self.assertEqual(longestMountain([2,2,2]), 0)
+
+    def test3(self):
+        self.assertEqual(longestMountain([2,3,1,2,3,4,5,6]), 3)
+    
+    def test4(self):
+        self.assertEqual(longestMountain([0]), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()
 
 
