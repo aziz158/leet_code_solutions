@@ -47,7 +47,6 @@ def longestMountain(arr: List[int]) -> int:
             i += 1
     return ans
 
-print(longestMountain([2,3,1,2,3,4,5,6]))
 
 class TestFindDuplicate(unittest.TestCase):
     def test1(self):
