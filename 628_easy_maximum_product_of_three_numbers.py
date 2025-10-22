@@ -26,7 +26,7 @@ from typing import List
 
 
 def maximumProduct(nums: List[int]) -> int:
-    
+
     nums.sort()
         
     option1 = nums[-1] * nums[-2] * nums[-3]
@@ -36,4 +36,19 @@ def maximumProduct(nums: List[int]) -> int:
     return max(option1, option2)
 
 
-print(maximumProduct([-1,-2,-3]))
+
+class TestMaxProd(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(maximumProduct([2,1,4,7,3,2,5]), 140)
+
+    def test2(self):
+        self.assertEqual(maximumProduct([2,2,2]), 8)
+
+    def test3(self):
+        self.assertEqual(maximumProduct([2,3,1,2,3,4,5,6]), 120)
+    
+
+
+
+if __name__ == "__main__":
+    unittest.main()
