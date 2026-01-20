@@ -35,18 +35,13 @@ import unittest
 def numWaterBottles(numBottles: int, numExchange: int) -> int:
 
     total = numBottles
+    empty = numBottles
 
-    curr = numBottles
+    while empty >= numExchange:
+        new = empty // numExchange       
+        total += new                     
+        empty = empty % numExchange + new  
 
-    rem = 0
-
-    while curr >= 1:
-
-        curr += rem
-        curr = curr // numExchange
-        rem = curr % numExchange
-        total += curr
-    
     return total
 
 print(numWaterBottles(12, 4))
