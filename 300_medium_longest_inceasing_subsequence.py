@@ -36,7 +36,7 @@ def lengthOfLIS(nums: List[int]) -> int:
 
     return max(dp)
 
-class TestRobber(unittest.TestCase):
+class TestLIS(unittest.TestCase):
     def test1(self):
         self.assertEqual(lengthOfLIS([10,9,2,5,3,7,101,18]), 4)
 
